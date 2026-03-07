@@ -28,8 +28,8 @@ function renderTodos () {
           
          ${content}
           <div class="task-actions">
-            <button class="btn-edit">✏️ Sửa</button
-            ><button class="btn-delete">🗑️ Xóa</button>
+            <button class="btn-edit">✏️ Sửa</button>
+            <button class="btn-delete">🗑️ Xóa</button>
           </div>
         </div>`
       }).join("");;
@@ -111,7 +111,7 @@ taskList.addEventListener('keydown', (e) => {
   if(!e.target.classList.contains("edit-input")) return;
   if(e.key === "Enter"){
     const taskItem = e.target.closest(".task-item");
-    const id = (taskItem.dataset.id);
+    const id = +(taskItem.dataset.id);
     const newName = e.target.value.trim();
     if(!newName) return;
       todos = todos.map(todo => {
@@ -124,4 +124,6 @@ taskList.addEventListener('keydown', (e) => {
     }
 
 })
-renderTodos();
+
+
+document.addEventListener("DOMContentLoaded",renderTodos());
