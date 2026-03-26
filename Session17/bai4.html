@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Todo</title>
+    <link rel="stylesheet" href="bai4.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <div class="card">
+
+            <div class="header">
+                <h1>Công việc chuẩn bị Tết</h1>
+                <p>Thêm công việc mới & đánh dấu hoàn thành</p>
+            </div>
+
+            <div class="search">
+                <input type="text" id="taskInput" placeholder="Nhập công việc mới..." autocomplete="off" />
+                <button id="addBtn" class="btn-add">Thêm</button>
+            </div>
+
+            <ul id="todoList">
+                <!-- JS render todos  -->
+            </ul>
+
+            <div class="footer">
+                Mọi thay đổi được lưu tự động vào localStorage • Refresh để kiểm tra
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="bai4.js"></script>
+</body>
+
+</html>

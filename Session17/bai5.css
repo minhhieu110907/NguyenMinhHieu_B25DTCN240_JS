@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body { background: #e7e7e7; }
+
+.page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 500px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+    background: #d62b2b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.search {
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+}
+
+.search input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.btn-add {
+    background-color: rgb(246, 125, 2);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+#todoList { padding: 20px; list-style: none; }
+
+.todo-item {
+    background: #f4edd2;
+    border-left: 5px solid orange;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.todo-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.edit-input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #d62b2b;
+    border-radius: 4px;
+    outline: none;
+}
+
+.todo-actions { 
+    display: flex; 
+    gap: 8px; 
+    margin-left: 10px; 
+}
+
+.todo-actions button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.todo-actions button:hover { 
+    background: rgba(0,0,0,0.05); 
+}
+
+.done { 
+    background: #dff0df; 
+    border-left: 5px solid green; 
+}
+
+.done .task-text { 
+    text-decoration: line-through; 
+    color: #777; 
+}
+
+.footer { 
+    text-align: center; 
+    padding: 15px; 
+    font-size: 13px; 
+    color: #666; 
+}

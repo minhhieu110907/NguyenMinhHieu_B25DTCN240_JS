@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #e7e7e7;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 500px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: #d62b2b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.header p {
+  font-size: 14px;
+}
+
+.stats-container {
+  background: #fdf2f2;
+  padding: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #d62b2b;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+}
+
+.search {
+  margin: 15px;
+  display: flex;
+}
+
+.search input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.btn-add {
+  background-color: rgb(246, 125, 2);
+  color: white;
+  padding: 0 20px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#todoList {
+  list-style: none;
+  padding: 0 15px;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.empty-msg {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+  font-style: italic;
+}
+
+.todo-item {
+  background: #f4edd2;
+  border-left: 5px solid orange;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.todo-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.edit-input {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #d62b2b;
+  border-radius: 4px;
+  outline: none;
+}
+
+.task-text {
+  word-break: break-all;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 5px;
+  margin-left: 10px;
+}
+
+.todo-actions button {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.done {
+  background: #dff0df;
+  border-left: 5px solid green;
+}
+
+.done .task-text {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.btn-clear-all {
+  background-color: #d62b2b;
+  color: white;
+  border: none;
+  padding: 12px;
+  margin: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.btn-clear-all:hover {
+  background-color: #a31f1f;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 11px;
+  color: #888;
+  border-top: 1px solid #eee;
+}
